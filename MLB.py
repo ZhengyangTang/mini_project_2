@@ -46,7 +46,7 @@ for i in labels:
         j = j+1
 labels = labelswitch
 
-
+# divide the set into 2 sets: training set and validation set. The size of validation set is 20% of the whole data.
 training_sets, test_sets, training_labels, test_labels = train_test_split(images, labels, test_size = 0.2, random_state = 30)
 training_sets = training_sets/255.0
 test_sets =  test_sets/255.0
